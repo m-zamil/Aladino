@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "TT Norms Pro";
+  font-family: 'TT Norms Pro';
   src: url(../fonts/TT-Norms-Pro-Regular.otf);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "TT Norms Pro";
+  font-family: 'TT Norms Pro';
   src: url(../fonts/TT-Norms-Pro-Medium.otf);
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "TT Norms Pro";
+  font-family: 'TT Norms Pro';
   src: url(../fonts/TT-Norms-Pro-Bold.otf);
   font-weight: 700;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 html {
-  font-family: "TT Norms Pro", sans-serif;
+  font-family: 'TT Norms Pro', sans-serif;
   font-size: 1rem;
   color: white;
   background-color: #101428;
@@ -53,7 +53,7 @@ img {
 }
 
 .wrapper {
-  background-image: url("../images/bg-header.jpeg");
+  background-image: url('../images/bg-header.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -85,7 +85,7 @@ nav {
 }
 .main-nav.active {
   left: 0;
-  background-color: rgb(16, 20, 40, 0.9);
+  background-color: rgb(16, 20, 40, 0.95);
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 .main-nav a {
@@ -180,7 +180,7 @@ nav {
   background-color: #8ffddb;
 }
 .btn--video::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 0px;
   height: 0px;
