@@ -39,16 +39,19 @@ html {
 h1 {
   margin: 0;
 }
-
-a {
-  color: white;
-}
 p {
   font-size: clamp(1rem, 0.7864rem + 0.9494vw, 1.375rem);
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
   margin: 32px 0 34px;
 }
+a {
+  color: white;
+}
+img {
+  vertical-align: middle;
+}
+
 .wrapper {
   background-image: url("../images/bg-header.jpeg");
   background-repeat: no-repeat;
