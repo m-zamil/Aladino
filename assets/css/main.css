@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(../fonts/TT-Norms-Pro-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(../fonts/TT-Norms-Pro-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url(../fonts/TT-Norms-Pro-Bold.otf);
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "TT Norms Pro", sans-serif;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+p {
+  font-size: clamp(1rem, 0.7864rem + 0.9494vw, 1.375rem);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 32px 0 34px;
+}
+.wrapper {
+  background-image: url("../images/bg-header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  padding: 0 8%;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 32px 0 64px;
+}
+.hero {
+  max-width: 500px;
+}
+.main-nav {
+  padding: 40px 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-nav a {
+  font-size: clamp(0.875rem, 0.6614rem + 0.9494vw, 1.25rem);
+  display: inline-block;
+  margin: 0 32px;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.logo {
+  flex-basis: 100%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.logo a {
+  margin: 0;
+}
+
+.sunhead {
+  font-size: clamp(1.75rem, 1.3228rem + 1.8987vw, 2.5rem);
+}
+.headline {
+  color: #8ffddb;
+  font-size: clamp(2.2rem, 1.3171rem + 3.9241vw, 3.75rem);
+}
+
+.ctas-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  margin-right: 20px;
+}
+.btn {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  margin-bottom: 16px;
+}
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.btn--aqua {
+  color: #101428;
+  background-color: #8ffddb;
+}
+.btn--video::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid white;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-top: -2px;
+}
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 0 10%;
+  }
+  .logo {
+    flex-basis: auto;
+    margin: 0;
+    margin-right: auto;
+  }
+  .main-nav a {
+    margin-bottom: 0;
+  }
+  .main-nav li:last-child a {
+    margin-right: 0;
+  }
+}
