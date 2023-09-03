@@ -13,11 +13,10 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: white;
-  background-color: #101428;
+  background-color: #101528;
   line-height: 1.3;
   size-adjust: 100%;
 }
-
 h1 {
   margin: 0;
 }
@@ -29,7 +28,11 @@ p {
 }
 a {
   color: white;
+  cursor: default;
   text-decoration: none;
+}
+sup {
+  font-size: 0.5em;
 }
 img {
   vertical-align: middle;
@@ -39,16 +42,16 @@ header {
 }
 
 .wrapper {
-  background-image: url('../images/bg-header.jpeg');
+  /* background-image: url('../images/bg-header.jpeg'); */
+  background-image: url('../images/islam.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+  background-size: 400px;
+  background-position: calc(100% + 140px) center;
   min-height: -webkit-fill-available;
-  height: 100vh;
   min-height: 100vh;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-auto-rows: 102px 1fr 66px;
+  grid-auto-rows: 102px 1fr 102px;
   align-content: space-between;
   align-items: center;
 }
@@ -87,7 +90,7 @@ nav {
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 .main-nav a {
-  font-size: clamp(1rem, 0.8576rem + 0.6329vw, 1.25rem);
+  font-size: 1rem;
   display: inline-block;
   margin: 16px 32px;
   text-decoration: none;
@@ -141,10 +144,10 @@ nav {
   justify-content: center;
   padding-top: 64px;
   padding-bottom: 64px;
-  background-image: url('../images/islam.svg');
+  /* background-image: url('../images/islam.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: calc(100% + 185px) center;
+  background-position: calc(100% + 185px) center; */
 }
 .hero-content {
   max-width: 525px;
@@ -164,7 +167,6 @@ nav {
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 30px;
-  margin-bottom: 16px;
   color: #101428;
   background-color: #8ffddb;
 }
@@ -180,12 +182,15 @@ nav {
   padding-bottom: 24px;
   text-align: center;
 }
+footer {
+  align-self: end;
+}
 .footer-nav li {
   min-width: max-content;
   flex: 1;
 }
 .footer-nav a {
-  font-size: 12px;
+  font-size: 10px;
   padding: 4px;
 }
 
@@ -204,6 +209,10 @@ nav {
   }
   .main-nav.active {
     background-color: transparent;
+  }
+  .wrapper {
+    background-size: 45%;
+    background-position: 90% center;
   }
   .container {
     padding-left: 10%;
