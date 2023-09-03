@@ -90,7 +90,7 @@ nav {
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 .main-nav a {
-  font-size: 1rem;
+  font-size: 0.875rem;
   display: inline-block;
   margin: 16px 32px;
   text-decoration: none;
@@ -186,7 +186,7 @@ footer {
   align-self: end;
 }
 .footer-nav li {
-  min-width: max-content;
+  min-width: 130px;
   flex: 1;
 }
 .footer-nav a {
@@ -234,6 +234,7 @@ footer {
   }
   .footer-nav {
     gap: 8px;
+    flex-wrap: nowrap;
   }
   .footer-nav a {
     padding: 8px;
