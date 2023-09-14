@@ -151,7 +151,7 @@ nav {
 .hero {
   display: flex;
   flex-direction: column;
-  min-height: calc(100svh - 99px);
+  min-height: calc(100svh - 98px);
   justify-content: center;
   background-color: #101528;
 }
@@ -372,7 +372,7 @@ nav {
 .steps{
   color: white;
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151E30 100%);
-  padding: 30px 0;
+  padding: 30px 0 60px;
   position: relative;
 }
 .steps::before{
@@ -387,7 +387,27 @@ nav {
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: center top;
+  pointer-events: none;
 }
+.steps-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+.step{
+  text-align: center;
+  text-align: center;
+  max-width: 150px;
+  font-weight: bold;
+}
+.step__arrow{
+  display: block;
+  transform: rotate(90deg);
+}
+
 
 /* ============ FAQS ========= */
 
@@ -461,6 +481,7 @@ nav {
 .footer-links{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .footer-list{
   padding-left: 0;
@@ -470,7 +491,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 100px 0 50px;
+  padding: 60px 0 50px;
 }
 .footer-nav-item{
   min-width: 50px;
@@ -496,6 +517,7 @@ nav {
 .footer-logo{
   padding-bottom: 50px;
   text-align: center;
+  padding-top: 48px;
 }
 
 
@@ -581,8 +603,10 @@ nav {
    margin-bottom: 0;
   }
   /* ======= Why Us ====== */
-  .whyus-content{
-    display: flex;
+  .whyus{
+    padding-bottom: 70px;
+  }
+  .whyus-content{ display: flex;
     align-items: flex-start;
     gap: 40px;
   }
@@ -595,7 +619,36 @@ nav {
     flex-shrink: 0;
     margin: 3em 0;
   }
+  /* ======= Steps ======== */
+  .steps{
+    padding-bottom: 180px;
+    padding-top: 80px;
+  }
+  .steps h2{
+    margin-bottom: 22px
+  }
+  .step{
+    position: relative;
+    padding:60px 0 60px;
+  }
+  .step p{
+    position: absolute;
+    min-width: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .steps-content{
+    flex-direction: row;
+    gap: 50px;
+    margin-left: -35px;
+  }
+  .step__arrow{
+    transform: rotate(0);
+  }
   /* ============ FAQS ========= */
+  .faqs{
+    padding-bottom: 80px;
+  }
   .faqs-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -611,6 +664,21 @@ nav {
 .panel{
   padding:0 30px;
 }
+/* =========== Footer ========= */
+.footer-links{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-nav{
+  padding-bottom: 20px;
+}
+.footer-info{
+  gap: 70px;
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+.footer-logo{
+  padding-top: 0;
+}
 
-  
 }
