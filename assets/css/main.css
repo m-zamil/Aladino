@@ -307,6 +307,8 @@ nav {
 .member__avatar {
   border-radius: 50%;
   width: 80px;
+  height: auto;
+  max-width: 80px;
   outline: 3px solid #e6e6e6;
 }
 .member__name {
@@ -478,6 +480,10 @@ nav {
   max-width: 300px;
   background-image: linear-gradient(148deg, #8ffedb 1.54%, #77d4bb 3.04%, #5fab9b 4.8%, #4a877e 6.73%, #386867 8.79%, #2a4f53 11.04%, #1f3c44 13.54%, #172e3a 16.44%, #122634 20.1%, #112432 26.99%, #11202f 63.9%, #101528 98.46%);
 }
+.client-card__logo{
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .proto-cards{
   display: flex;
@@ -522,30 +528,6 @@ nav {
   margin-right: auto;
 }
 
-/* ============ Why us ========= */
-.whyus {
-  background-color: #f3f3f3;
-  color: var(--color-black);
-  padding: 30px 0;
-}
-.whuus__title {
-  margin-bottom: 0;
-}
-.whyus__heading {
-  text-align: left;
-}
-.versus {
-  width: 80px;
-  text-align: center;
-
-  padding: 12px 24px;
-  margin: 32px auto;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-  font-weight: 700;
-}
-
 /* ========= How to start ========= */
 .steps {
   color: white;
@@ -580,9 +562,17 @@ nav {
   max-width: 150px;
   font-weight: bold;
 }
+.step p{
+  min-width: 170px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .step__arrow {
   display: block;
   transform: rotate(90deg);
+  width: 50px;
+  height: 50px;
 }
 
 /* ========== Footer ======== */
@@ -738,7 +728,7 @@ nav {
     justify-content: space-evenly;
   }
   .client-card {
-    padding: 80px 40px 60px;
+    padding: 50px 30px 40px;
     margin: 0;
   }
 
@@ -771,24 +761,7 @@ nav {
     margin-top: 60px;
     margin-bottom: 0;
   }
-  /* ======= Why Us ====== */
-  .whyus {
-    padding-bottom: 70px;
-  }
-  .whyus-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-  }
-  .whyus__heading--right {
-    text-align: right;
-  }
-  .versus {
-    font-size: 1.5rem;
-    width: 100px;
-    flex-shrink: 0;
-    margin: 3em 0;
-  }
+  
   /* ======= Steps ======== */
   .steps {
     padding-bottom: 180px;
@@ -803,7 +776,7 @@ nav {
   }
   .step p {
     position: absolute;
-    min-width: 170px;
+    min-width: 180px;
     left: 50%;
     transform: translateX(-50%);
   }
