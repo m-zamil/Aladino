@@ -684,6 +684,9 @@ nav {
     margin-right: 0;
   }
   /* ================ Hero =========== */
+  .hero-content {
+    padding-top: 0;
+  }
   .hero-image {
     position: static;
   }
