@@ -621,6 +621,9 @@ nav {
   text-align: center;
   padding-top: 48px;
 }
+.footer-logo__image{
+  margin: 20px 0;
+}
 
 /* ========== Utilities ========== */
 .medium {
