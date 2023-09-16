@@ -1,5 +1,6 @@
 :root {
   --color-black: #213441;
+  --color-glacier:#72BBC4;
 }
 *,
 *::before,
@@ -38,7 +39,7 @@ h2 {
   margin: 0;
   letter-spacing: -1px;
   text-transform: uppercase;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 h3 {
   font-size: 1.375rem;
@@ -100,7 +101,7 @@ address {
 /* ============ Navbar ========= */
 header {
   width: 100%;
-  background-color: #101528;
+  background-color: #11202f;
 }
 
 nav {
@@ -128,7 +129,7 @@ nav {
 }
 .main-nav.active {
   left: 0;
-  background-color: rgb(16, 20, 40, 0.95);
+  background-color: #11202f;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 .main-nav a {
@@ -136,6 +137,11 @@ nav {
   display: inline-block;
   margin: 16px 32px;
   text-decoration: none;
+}
+.login-link{
+  margin-left: auto;
+  margin-right: 20px;
+  z-index: 3;
 }
 
 .logo {
@@ -187,7 +193,7 @@ nav {
   flex-direction: column;
   min-height: calc(100svh - 98px);
   justify-content: center;
-  background-color: #101528;
+  background: linear-gradient(180deg, #11202f 7.92%, #223542 100%);
 }
 
 .hero-wrapper {
@@ -227,7 +233,7 @@ nav {
   font-size: clamp(1.75rem, 1.3228rem + 1.8987vw, 2.5rem);
 }
 .headline {
-  color: #8ffddb;
+  color: var(--color-glacier);
   font-size: clamp(2.2rem, 1.3171rem + 3.9241vw, 3.75rem);
 }
 .hero__subtitle {
@@ -250,12 +256,16 @@ nav {
   padding: 14px 28px;
   border-radius: 30px;
   color: #101428;
-  background-color: #8ffddb;
+  background-color: var(--color-glacier);
 }
 
 /* ============ About Us ========= */
 .about {
   padding-bottom: 64px;
+  background-image: url(../images/islam-10.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
 }
 .about__subhead {
   font-size: 1.0625rem;
@@ -286,14 +296,14 @@ nav {
   width: 50px;
 }
 .card__text--about {
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.5px;
 }
 
 /* =========== Aladino Team ======= */
 .team {
   color: #213441;
-  padding: 40px 0 60px;
+  padding: 40px 0 0px;
 }
 
 /* ====== member cards ====== */
@@ -346,6 +356,10 @@ nav {
   padding: 0 0 70px;
 }
 .mercato .container {
+  background-image: url(../images/islam-10.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center top;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -368,9 +382,14 @@ nav {
 }
 
 /* ========= Exclusive Club ========== */
-.exclusive-club {
-  padding: 0 0 30px;
+
+.exclusive-club{
+  background-image: url(../images/islam-10.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center top;
 }
+
 .million-card-wrapper {
   margin: 20px;
 }
@@ -414,10 +433,17 @@ nav {
 .ourbet {
   margin-bottom: 60px;
 }
+.ourbet .tagline{
+  padding-top: 3em;
+}
+
 .ourbet-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.ourbet-cards h4{
+  font-size: 1.2rem;
 }
 .card--ourbet {
   max-width: 400px;
@@ -428,6 +454,12 @@ nav {
   color: white;
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
   padding-bottom: 30px;
+}
+.works .container{
+  background-image: url(../images/islam-10.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center top;
 }
 .works-stats {
   display: flex;
@@ -466,6 +498,12 @@ nav {
 }
 
 /* ======== Aladino Clients ======= */
+.clients{
+  background-image: url(../images/islam-10.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center top;
+}
 .clients-cards {
   display: flex;
   flex-wrap: wrap;
@@ -508,10 +546,16 @@ nav {
 
 /* ======= Business Model ====== */
 .business-model {
-  padding: 30px 0;
+  padding: 0 0 30px;
   text-align: center;
   color: white;
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
+}
+.business-model .container{
+  background-image: url(../images/islam-10.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center top;
 }
 
 .business-model-content {
@@ -573,6 +617,30 @@ nav {
   width: 50px;
   height: 50px;
 }
+/* 30 day */
+.day30{
+  background:linear-gradient(180deg, #11202F 7.92%, #223542 100%);
+  padding-top: 60px;
+}
+/* FAQs */
+.faqs{
+  text-align: center;
+  padding-bottom: 60px;
+}
+.faqs .tagline{
+  padding-top: 1.5em;
+}
+.faq-btn{
+  text-align: center;
+    background-color: #71BBC4;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+    display: inline-block;
+}
 
 /* ========== Footer ======== */
 .footer {
@@ -592,15 +660,15 @@ nav {
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 60px 0 50px;
 }
 .footer-nav-item {
   min-width: 50px;
 }
-.footer-nav-item p {
+.footer-nav-item a {
   font-size: 12px;
-  font-weight: bold;
 }
 .footer-social {
   display: flex;
@@ -612,6 +680,7 @@ nav {
 }
 .footer-info {
   display: flex;
+  justify-content: center;
   gap: 20px;
   align-items: center;
   line-height: 1.7;
@@ -628,7 +697,9 @@ nav {
 /* ========== Utilities ========== */
 .medium {
   font-weight: 500;
-  /* line-height: 1.75; */
+}
+.semibold{
+  font-weight: 600;
 }
 .bold {
   font-weight: bold;
@@ -681,7 +752,7 @@ nav {
     margin-right: auto;
   }
   .main-nav a {
-    margin: 0 32px;
+    margin: 0 10px;
   }
   .main-nav li:last-child a {
     margin-right: 0;
@@ -714,6 +785,7 @@ nav {
   }
   .member__text {
     font-size: 1rem;
+    margin-bottom: 22px;
   }
   /* ===== Mercato mining ===== */
   .mercato {
@@ -773,7 +845,6 @@ nav {
   /* ======= Steps ======== */
   .steps {
     padding-bottom: 180px;
-    padding-top: 80px;
   }
   .steps h2 {
     margin-bottom: 22px;
@@ -796,17 +867,24 @@ nav {
   .step__arrow {
     transform: rotate(0);
   }
+  /* == FAQs ==*/
+  .faq-btn{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   /* =========== Footer ========= */
   .footer-links {
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 60px;
   }
   .footer-nav {
+    padding-top: 0;
     padding-bottom: 20px;
   }
   .footer-info {
     gap: 70px;
-    align-self: flex-end;
+    align-self: center;
     padding-bottom: 20px;
   }
   .footer-logo {
