@@ -843,7 +843,7 @@ nav {
     font-size: clamp(2.125rem, 1.6408rem + 1.5493vw, 3.5rem);
   }
   .business-model__image {
-    max-width: 600px;
+    max-width: 650px;
   }
   /* ========== Strategy ======== */
   .strategy-cards {
