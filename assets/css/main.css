@@ -102,10 +102,12 @@ address {
 header {
   width: 100%;
   background-color: #11202f;
+  position: fixed;
+  z-index: 3;
 }
 
 nav {
-  padding: 38px 0;
+  padding: 33px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,9 +191,10 @@ nav {
 /* ========== Hero ======== */
 
 .hero {
+  padding-top: 104.2px;
   display: flex;
   flex-direction: column;
-  min-height: calc(100svh - 98px);
+  min-height: 100svh;
   justify-content: center;
   background: linear-gradient(180deg, #11202f 7.92%, #223542 100%);
 }
@@ -334,6 +337,9 @@ nav {
 }
 .member__link {
   text-align: center;
+}
+.member__link a{
+  display: inline-block;
 }
 .cards-wrapper {
   display: flex;
@@ -620,7 +626,7 @@ nav {
 /* 30 day */
 .day30{
   background:linear-gradient(180deg, #11202F 7.92%, #223542 100%);
-  padding-top: 60px;
+  padding-top: 160px;
 }
 /* FAQs */
 .faqs{
@@ -734,6 +740,12 @@ nav {
   }
   .main-nav.active {
     background-color: transparent;
+  }
+  .login-link{
+    background-color: #72BBC4;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: #72BBC4;
   }
   .wrapper {
     background-size: 45%;
