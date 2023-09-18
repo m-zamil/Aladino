@@ -11,96 +11,6 @@
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* ============ Navbar =========
-header {
-  width: 100%;
-  background-color: #11202f;
-  position: fixed;
-  z-index: 3;
-}
-
-nav {
-  padding: 33px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-nav {
-  position: absolute;
-  left: -100%;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  padding-top: 120px;
-  list-style: none;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  transition: all 0.4s;
-  z-index: 2;
-  gap: 10px;
-  min-height: 100vh;
-  justify-content: center;
-}
-.main-nav.active {
-  left: 0;
-  background-color: #11202f;
-  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-}
-.main-nav a {
-  font-size: 0.875rem;
-  display: inline-block;
-  margin: 16px 32px;
-  text-decoration: none;
-}
-.login-link{
-  margin-left: auto;
-  margin-right: 20px;
-  z-index: 3;
-}
-
-.logo {
-  position: relative;
-  z-index: 3;
-}
-.logo a {
-  margin: 0;
-}
-
-.bar {
-  display: block;
-  width: 20px;
-  height: 2px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-  border-radius: 1px;
-  margin-bottom: 4px;
-}
-
-.hamburger {
-  cursor: pointer;
-  z-index: 3;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  -webkit-transform: translateY(6px) rotate(45deg);
-  transform: translateY(6px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  -webkit-transform: translateY(-6px) rotate(-45deg);
-  transform: translateY(-6px) rotate(-45deg);
-}
-
-.bar:last-child {
-  margin-bottom: 0;
-} */
-
 /* ========== Hero ======== */
 
 .hero {
@@ -220,6 +130,7 @@ nav {
 .team {
   color: #213441;
   padding: 40px 0 0px;
+  margin-bottom: 40px;
 }
 
 /* ====== member cards ====== */
@@ -426,6 +337,7 @@ nav {
 .clients-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .client-card {
@@ -444,6 +356,7 @@ nav {
 .proto-cards{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 48px;
 }
 .proto-card{
@@ -554,9 +467,10 @@ nav {
   left: 50%;
   transform: translateX(-37%);
 }
-.fs-1{
-                
-  font-size: clamp(3.125rem, -1.7857rem + 15.7143vw, 10rem);
+.fs-1{           
+  line-height: 1.75;
+  font-size: clamp(3.125rem, 1.875rem + 4vw, 4.875rem);
+  font-size: clamp(1.4375rem, -1.0179rem + 7.8571vw, 4.875rem);
 color: #71BBC4;
 }
 .fs-2{
@@ -568,7 +482,7 @@ color: #71BBC4;
 .fs-3{
 text-align: center;
 font-size: clamp(0.75rem, -0.9464rem + 5.4286vw, 3.125rem);
-margin-top: 1em;
+margin-top: 1.5em;
 }
 .fs33{
   
@@ -576,6 +490,21 @@ margin-top: 1em;
   background-color: #71BBC4;
 padding: 0.25em 2em;
 border-radius: 1em;
+}
+.day30-footer{
+  text-align: center;
+  background:linear-gradient(180deg, #11202F 7.92%, #223542 100%);
+  padding-top: 80px;
+  position: relative;
+}
+.day30-footer-link{
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 500;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-black);
 }
 /* FAQs */
 .faqs{
@@ -597,12 +526,17 @@ border-radius: 1em;
     display: inline-block;
 }
 
+/* ====== Day30 ===== */
+
 
 @media (min-width: 992px) {
 
   .card {
     margin: 0 20px 40px;
     padding: 40px;
+  }
+  .fs-3{
+    margin-top: 1em;
   }
 
   /* ================ Hero =========== */
@@ -667,7 +601,6 @@ border-radius: 1em;
   .proto-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   .proto-card{
     margin: 0 20px 40px;
@@ -723,5 +656,8 @@ border-radius: 1em;
     padding-left: 60px;
     padding-right: 60px;
   }
-  
+  .day30-footer-link{
+    font-size: 16px;
+    bottom: 40px;
+  }
 }
