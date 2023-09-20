@@ -1,6 +1,6 @@
 :root {
   --color-black: #213441;
-  --color-glacier:#72BBC4;
+  --color-glacier: #72bbc4;
 }
 
 .card {
@@ -31,6 +31,7 @@
 
 .hero-content {
   max-width: 525px;
+  max-width: 50ch;
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -55,12 +56,22 @@
 }
 
 .subhead {
+  display: inline-block;
   color: white;
   font-size: clamp(1.75rem, 1.3228rem + 1.8987vw, 2.5rem);
+  font-size: clamp(1.75rem, 1.5299rem + 0.939vw, 2.375rem);
+  margin-bottom: 0.5em;
 }
 .headline {
+  display: inline-block;
   color: var(--color-glacier);
   font-size: clamp(2.2rem, 1.3171rem + 3.9241vw, 3.75rem);
+  font-size: clamp(2.2rem, 1.1701rem + 3.2958vw, 5.125rem);
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+.hero__cta {
+  color: white;
 }
 .hero__subtitle {
   margin: 32px 0 34px;
@@ -74,6 +85,7 @@
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: 0.5px;
+  max-width: 58ch;
 }
 .btn {
   font-weight: bold;
@@ -81,8 +93,12 @@
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 30px;
-  color: #101428;
+  color: white;
   background-color: var(--color-glacier);
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: #67a8b0;
 }
 
 /* ============ About Us ========= */
@@ -105,6 +121,7 @@
 .about__text {
   line-height: 1.8;
   text-align: center;
+  max-width: 1000px;
 }
 .about-cards-wrapper {
   display: flex;
@@ -125,6 +142,72 @@
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+/* ============ Market ========= */
+.market {
+  background: url(../images/islam-10.png), radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
+  background-repeat: no-repeat;
+  background-size: 400px, auto;
+  background-position: center top, center;
+  color: white;
+  padding: 80px 0;
+}
+.market-wrapper {
+  text-align: center;
+}
+.market__tagline {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: clamp(1rem, 0.6676rem + 1.0638vw, 1.625rem);
+}
+.market__heading {
+  text-align: center;
+  margin-top: 0;
+  font-size: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
+  margin-bottom: 2em;
+}
+.versus {
+  width: 80px;
+  text-align: center;
+  padding: 22px 18px;
+  margin: 74px auto;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--color-black);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.versus-wrapper {
+  position: relative;
+}
+.versus-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #55bcc5;
+}
+.news-list {
+  font-weight: bold;
+  text-align: center;
+  padding-left: 0;
+  list-style-type: none;
+}
+.news-list li {
+  margin: 38px 0;
+}
+.news-list a {
+  text-decoration: underline;
+  font-size: clamp(0.875rem, 0.742rem + 0.4255vw, 1.125rem);
+  display: inline-block;
+  max-width: 30ch;
+  line-height: 1.5;
+}
 
 /* =========== Aladino Team ======= */
 .team {
@@ -136,60 +219,69 @@
 /* ====== member cards ====== */
 
 .member-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+}
+.member-avatar-wrapper {
+  text-align: center;
 }
 
 .member__avatar {
   border-radius: 50%;
-  width: 80px;
+  width: 130px;
   height: auto;
-  max-width: 80px;
-  outline: 3px solid #e6e6e6;
+  max-width: 130px;
+  margin-top: -60px;
 }
 .member__name {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 35px;
 }
 .member__role {
   font-size: 0.875rem;
+  color: #838383;
+  font-weight: 500;
 }
 .member__text {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin: 16px 0;
+  line-height: 2;
 }
 .member__link {
   text-align: center;
+  margin-top: auto;
+  padding: 22px 0px 16px;
 }
-.member__link a{
+.member__link a {
   display: inline-block;
 }
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 .member-card {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   padding: 28px;
-  margin: 0 20px 40px;
+  margin: 0 20px 80px;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  max-width: 600px;
+  max-width: 325px;
 }
 
 /* ======== Mercato Mining ======= */
-.mercato {
+/* .mercato {
   color: white;
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
   padding: 0 0 70px;
 }
 .mercato .container {
   background-image: url(../images/islam-10.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -209,15 +301,19 @@
 .mercato-card__link {
   font-size: 9px;
   line-height: 1;
-}
+} */
 
 /* ========= Exclusive Club ========== */
 
-.exclusive-club{
+.exclusive-club {
   background-image: url(../images/islam-10.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
+}
+.exclusive-club h3 {
+  margin-bottom: 1em;
+  margin-top: 3em;
 }
 
 .million-card-wrapper {
@@ -263,17 +359,18 @@
 .ourbet {
   margin-bottom: 60px;
 }
-.ourbet .tagline{
-  padding-top: 3em;
-}
 
 .ourbet-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 60px;
 }
-.ourbet-cards h4{
+.ourbet-cards h4 {
   font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 .card--ourbet {
   max-width: 400px;
@@ -285,16 +382,20 @@
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
   padding-bottom: 30px;
 }
-.works .container{
+.works .container {
   background-image: url(../images/islam-10.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
 }
 .works-stats {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 12px;
+  margin: -12px;
+  border: 0.5px solid white;
+  border-radius: 16px;
 }
 .stats__text {
   font-size: 1rem;
@@ -325,14 +426,15 @@
   font-weight: 800;
   text-transform: uppercase;
   margin: 0;
+  font-size: clamp(1rem, 0.8944rem + 0.4507vw, 1.3rem);
 }
 
 /* ======== Aladino Clients ======= */
-.clients{
+.clients {
   background-image: url(../images/islam-10.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
 }
 .clients-cards {
   display: flex;
@@ -346,34 +448,46 @@
   margin: 0 20px;
   color: white;
   max-width: 300px;
-  background-image: linear-gradient(148deg, #8ffedb 1.54%, #77d4bb 3.04%, #5fab9b 4.8%, #4a877e 6.73%, #386867 8.79%, #2a4f53 11.04%, #1f3c44 13.54%, #172e3a 16.44%, #122634 20.1%, #112432 26.99%, #11202f 63.9%, #101528 98.46%);
+  background-image: linear-gradient(
+    148deg,
+    #8ffedb 1.54%,
+    #77d4bb 3.04%,
+    #5fab9b 4.8%,
+    #4a877e 6.73%,
+    #386867 8.79%,
+    #2a4f53 11.04%,
+    #1f3c44 13.54%,
+    #172e3a 16.44%,
+    #122634 20.1%,
+    #112432 26.99%,
+    #11202f 63.9%,
+    #101528 98.46%
+  );
 }
-.client-card__logo{
-  text-align: center;
+.client-card__logo {
   margin-bottom: 30px;
 }
 
-.proto-cards{
+.proto-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 48px;
 }
-.proto-card{
+.proto-card {
   max-width: 400px;
   background-color: white;
-    border-radius: 28px;
-    margin: 20px 20px 20px;
-    padding: 28px;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  margin: 20px 20px 20px;
+  padding: 28px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
-.proto-card img{
+.proto-card img {
   width: 50px;
   margin-bottom: 16px;
 }
-.proto-card .proto-card__image{
+.proto-card .proto-card__image {
   width: 40px;
-
 }
 
 /* ======= Business Model ====== */
@@ -383,11 +497,11 @@
   color: white;
   background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
 }
-.business-model .container{
+.business-model .container {
   background-image: url(../images/islam-10.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center top;
 }
 
 .business-model-content {
@@ -406,7 +520,7 @@
 /* ========= How to start ========= */
 .steps {
   color: white;
-  background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
+  background: radial-gradient(83.63% 83.5% at 51.95% 80.97%, #213441 32.95%, #151e30 100%);
   padding: 30px 0 60px;
   position: relative;
 }
@@ -437,11 +551,12 @@
   max-width: 150px;
   font-weight: bold;
 }
-.step p{
+.step p {
   min-width: 170px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 600;
 }
 .step__arrow {
   display: block;
@@ -450,54 +565,13 @@
   height: 50px;
 }
 /* ==========  30 day ===========  */
-.day30{
-  background:linear-gradient(180deg, #11202F 7.92%, #223542 100%);
-  padding-top: 160px;
-}
-.relative{
-  position: relative;
-}
-.day30 img{
-  user-select: none;
-}
-.challenge-text{
-  font-weight: 800;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-37%);
-}
-.fs-1{           
-  line-height: 1.75;
-  font-size: clamp(3.125rem, 1.875rem + 4vw, 4.875rem);
-  font-size: clamp(1.4375rem, -1.0179rem + 7.8571vw, 4.875rem);
-color: #71BBC4;
-}
-.fs-2{
-
-  font-size: clamp(1.125rem, -0.8393rem + 6.2857vw, 3.875rem);
-  color: white;
-  white-space: nowrap;
-}
-.fs-3{
-text-align: center;
-font-size: clamp(0.75rem, -0.9464rem + 5.4286vw, 3.125rem);
-margin-top: 1.5em;
-}
-.fs33{
-  
-  font-size: clamp(0.75rem, -0.1429rem + 2.8571vw, 2rem);
-  background-color: #71BBC4;
-padding: 0.25em 2em;
-border-radius: 1em;
-}
-.day30-footer{
+.day30-footer {
   text-align: center;
-  background:linear-gradient(180deg, #11202F 7.92%, #223542 100%);
+  background: radial-gradient(129.7% 129.7% at 51.95% 80.97%, #213441 60.76%, #151e30 100%);
   padding-top: 80px;
   position: relative;
 }
-.day30-footer-link{
+.day30-footer-link {
   display: inline-block;
   position: absolute;
   bottom: 10px;
@@ -507,35 +581,37 @@ border-radius: 1em;
   color: var(--color-black);
 }
 /* FAQs */
-.faqs{
+.faqs {
   text-align: center;
   padding-bottom: 60px;
 }
-.faqs .tagline{
+.faqs .tagline {
   padding-top: 1.5em;
 }
-.faq-btn{
+.faq-btn {
   text-align: center;
-    background-color: #71BBC4;
-    font-weight: 600;
-    text-decoration: underline;
-    padding: 16px 20px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    margin: 20px 0 30px;
-    display: inline-block;
+  background-color: #71bbc4;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 16px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin: 20px 0 30px;
+  display: inline-block;
 }
 
 /* ====== Day30 ===== */
 
-
 @media (min-width: 992px) {
-
+  .btn {
+    padding: 14px 44px;
+  }
   .card {
     margin: 0 20px 40px;
     padding: 40px;
   }
-  .fs-3{
+
+  .fs-3 {
     margin-top: 1em;
   }
 
@@ -550,6 +626,9 @@ border-radius: 1em;
     position: static;
   }
   /* ============ About us ==========*/
+  .about {
+    padding-bottom: 100px;
+  }
   .about-cards-wrapper {
     margin-top: 72px;
   }
@@ -559,20 +638,56 @@ border-radius: 1em;
   .card__icon--about {
     width: 70px;
   }
+  /* ======= Market news ====== */
+  .market {
+    padding: 140px 0 90px;
+  }
+  .market-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  .versus-wrapper::after {
+    top: 4px;
+    height: calc(100% - 60px);
+    width: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .versus {
+    font-size: 1.5rem;
+    width: 100px;
+    flex-shrink: 0;
+    margin: 4px 0;
+  }
+  .news-list li {
+    margin: 60px 0;
+  }
 
   /* ============= Team =========== */
+  .team {
+    margin-bottom: 70px;
+  }
+  .team .container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
   /* == Member cards */
   .cards-wrapper {
     justify-content: space-around;
+    gap: 0;
   }
   .member-card {
-    flex-basis: 45%;
+    flex-basis: 30%;
+    padding: 28px 34px;
+    margin: 0 0 80px;
   }
   .member__text {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-bottom: 22px;
   }
-  /* ===== Mercato mining ===== */
+  /* ===== Mercato mining =====
   .mercato {
     padding-bottom: 120px;
   }
@@ -582,10 +697,15 @@ border-radius: 1em;
 
   .mercato-card {
     flex-basis: 30%;
-  }
+  } */
   /* ========== Why Aladino Works ========== */
   .works {
     padding-bottom: 60px;
+  }
+  .works-stats {
+    padding: 30px;
+    border-radius: 24px;
+    margin: 0 0 -34px;
   }
 
   /* ======== Aladino Clients ======= */
@@ -593,20 +713,23 @@ border-radius: 1em;
     justify-content: space-evenly;
   }
   .client-card {
-    padding: 50px 30px 40px;
+    padding: 50px 30px 68px;
     margin: 0;
   }
 
   /* =========== Protocol ======= */
-  .proto-cards{
+  .proto-card__title {
+    font-size: 1.25rem;
+  }
+  .proto-cards {
     display: flex;
     flex-wrap: wrap;
   }
-  .proto-card{
+  .proto-card {
     margin: 0 20px 40px;
     padding: 40px;
   }
-  .proto-card img{
+  .proto-card img {
     width: 60px;
   }
 
@@ -614,8 +737,14 @@ border-radius: 1em;
   .business-model__heading {
     font-size: clamp(2.125rem, 1.6408rem + 1.5493vw, 3.5rem);
   }
+  .business-model p {
+    font-size: 1.3rem;
+  }
   .business-model__image {
     max-width: 650px;
+  }
+  .exclusive-club h3 {
+    margin-bottom: 0.25em;
   }
   /* ========== Strategy ======== */
   .strategy-cards {
@@ -625,7 +754,13 @@ border-radius: 1em;
     margin-top: 60px;
     margin-bottom: 0;
   }
-  
+  .ourbet {
+    margin-bottom: 100px;
+  }
+  .card--ourbet {
+    padding: 60px 38px;
+  }
+
   /* ======= Steps ======== */
   .steps {
     padding-bottom: 180px;
@@ -639,7 +774,7 @@ border-radius: 1em;
   }
   .step p {
     position: absolute;
-    min-width: 180px;
+    min-width: 210px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -650,13 +785,14 @@ border-radius: 1em;
   }
   .step__arrow {
     transform: rotate(0);
+    width: 70px;
   }
   /* == FAQs ==*/
-  .faq-btn{
+  .faq-btn {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .day30-footer-link{
+  .day30-footer-link {
     font-size: 16px;
     bottom: 40px;
   }
