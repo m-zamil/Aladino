@@ -34,9 +34,23 @@
   max-width: 50ch;
   padding-top: 64px;
   padding-bottom: 64px;
+  position: relative;
 }
 .hero-content h1 {
   text-align: left;
+}
+.launch-time {
+  position: relative;
+}
+.launch-time .time {
+  font-size: 0.3em;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  right: -5em;
+  height: 30px;
+  top: calc(50% + 4px);
+  transform: translateY(-50%);
 }
 .hero-image {
   flex: 1;
@@ -45,6 +59,7 @@
   height: auto;
   position: absolute;
   right: -30%;
+  pointer-events: none;
 }
 .hero::after {
   content: '';
